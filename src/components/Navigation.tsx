@@ -105,12 +105,9 @@ function Navigation({ parentToChild, modeChange }: any) {
           >
             <MenuIcon />
           </IconButton>
-          {mode === "dark" ? (
-            <LightModeIcon onClick={() => modeChange()} />
-          ) : (
-            <DarkModeIcon onClick={() => modeChange()} />
-          )}
-          <Box sx={{ display: { xs: "none", sm: "block" } }}>
+          <Box
+            sx={{ display: { xs: "none", sm: "block" }, marginLeft: "auto" }}
+          >
             {navItems.map((item) => (
               <Button
                 key={item[0]}
