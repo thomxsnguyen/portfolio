@@ -113,6 +113,33 @@ function Timeline() {
               </li>
             </ul>
           </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="Jan 2024 - May 2024"
+            iconStyle={{ background: "#6C8EBF", color: "rgb(39, 40, 34)" }}
+            icon={<FontAwesomeIcon icon={faBriefcase} />}
+          >
+            <h3 className="vertical-timeline-element-title">
+              Security Analyst Intern
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">CyberFoward</h4>
+            <ul>
+              <li>
+                Mastered security program fundamentals, including security
+                policy development, risk analysis, and vulnerability
+                engineering.
+              </li>
+              <li>
+                Conducted mock security policy activities, risk assessments, and
+                vulnerability assessments in team settings.
+              </li>
+              <li>
+                Developed and demonstrated skills in visual and verbal
+                presentation, team collaboration, consulting, and interpersonal
+                communication.
+              </li>
+            </ul>
+          </VerticalTimelineElement>
         </VerticalTimeline>
       </div>
     </div>
