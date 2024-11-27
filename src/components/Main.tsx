@@ -29,7 +29,7 @@ function Main() {
             </a>
           </div>
           <h1>Thomas Nguyen</h1>
-          <p>Software Engineer</p>
+          <p>Second-year Computer Science student</p>
 
           <div className="mobile_social_icons">
             <a
