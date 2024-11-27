@@ -9,36 +9,29 @@ import {
 import Chip from "@mui/material/Chip";
 import "../assets/styles/Expertise.scss";
 
-const labelsFirst = [
-  "React",
-  "JavaScript",
-  "HTML5",
-  "CSS3",
-  "Flask",
-  "Python",
-  "SQL",
-];
+const labelsFirst = ["React", "JavaScript", "HTML5", "CSS3", "Flask"];
 
 const labelsSecond = [
+  "Python",
+  "Java",
+  "C++",
   "Git",
-  "GitHub Actions",
-  "Docker",
+  "Flask",
+  "Node.js",
   "AWS",
-  "Azure",
-  "Linux",
-  "Snowflake",
-  "Pandas",
-  "Selenium",
+  "SQL",
+  "OAuth2.0",
 ];
 
 const labelsThird = [
-  "OpenAI",
-  "Groq",
-  "LangChain",
-  "Qdrant",
-  "Hugging Face",
-  "LlamaIndex",
-  "Streamlit",
+  "pandas",
+  "NumPy",
+  "TensorFlow",
+  "Keras",
+  "scikit-learn",
+  "Matplotlib",
+  "Seaborn",
+  "Jupyter Notebooks",
 ];
 
 function Expertise() {
@@ -49,12 +42,11 @@ function Expertise() {
         <div className="skills-grid">
           <div className="skill">
             <FontAwesomeIcon icon={faReact} size="3x" />
-            <h3>Full Stack Web Development</h3>
+            <h3>Front-end Development</h3>
             <p>
-              I have built a diverse array of web applications from scratch
-              using modern technologies such as React and Flask. I have a strong
-              proficiency in the SDLC process and frontend + backend
-              development.
+              Learning front-end development with React, JavaScript, HTML5, and
+              CSS3, focusing on creating responsive, interactive, and visually
+              appealing user interfaces that enhance user experience.
             </p>
             <div className="flex-chips">
               <span className="chip-title">Tech stack:</span>
@@ -66,11 +58,13 @@ function Expertise() {
 
           <div className="skill">
             <FontAwesomeIcon icon={faDocker} size="3x" />
-            <h3>Machine Learning & Data Analysis</h3>
+            <h3>Back-end Developments</h3>
             <p>
-              Once the application is built, I help clients set up DevOps
-              testing, CI/CD pipelines, and deployment automation to support the
-              successful Go-Live.
+              Currently expanding knowledge in backend development, focusing on
+              building scalable and secure systems with Flask, Python, SQL,
+              Java, and C++. Gaining experience in integrating APIs, managing
+              databases, optimizing server-side functionality, and enhancing
+              application performance.
             </p>
             <div className="flex-chips">
               <span className="chip-title">Tech stack:</span>
@@ -82,12 +76,13 @@ function Expertise() {
 
           <div className="skill">
             <FontAwesomeIcon icon={faPython} size="3x" />
-            <h3>GenAI & LLM</h3>
+            <h3>Machine Learning & Data Analysis</h3>
             <p>
-              Stay relevant in the market by leveraging the latest AI models in
-              your projects. I have professional experience building enterprise
-              grade GenAI-enabled solutions to empower intelligent decision
-              making.
+              Expanding my skills in machine learning and data analysis by
+              developing predictive models with TensorFlow, Keras, and
+              scikit-learn. Working with large datasets, using tools like pandas
+              and NumPy to preprocess data and uncover insights, and leveraging
+              Matplotlib to visualize results and track model performance.
             </p>
             <div className="flex-chips">
               <span className="chip-title">Tech stack:</span>
