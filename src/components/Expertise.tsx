@@ -5,9 +5,11 @@ import {
   faReact,
   faDocker,
   faPython,
+  faHtml5,
 } from "@fortawesome/free-brands-svg-icons";
 import Chip from "@mui/material/Chip";
 import "../assets/styles/Expertise.scss";
+import { faCode, faGears } from "@fortawesome/free-solid-svg-icons";
 
 const labelsFirst = ["React", "JavaScript", "HTML5", "CSS3", "Flask"];
 
@@ -41,7 +43,7 @@ function Expertise() {
         <h1>Expertise</h1>
         <div className="skills-grid">
           <div className="skill">
-            <FontAwesomeIcon icon={faReact} size="3x" />
+            <FontAwesomeIcon icon={faHtml5} size="3x" />
             <h3>Front-end Development</h3>
             <p>
               Learning front-end development with React, JavaScript, HTML5, and
@@ -57,7 +59,7 @@ function Expertise() {
           </div>
 
           <div className="skill">
-            <FontAwesomeIcon icon={faDocker} size="3x" />
+            <FontAwesomeIcon icon={faGears} size="3x" />
             <h3>Back-end Development</h3>
             <p>
               Currently expanding knowledge in backend development, focusing on
