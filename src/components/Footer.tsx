@@ -7,6 +7,7 @@ function Footer() {
   return (
     <footer>
       <div>
+        <p>Made with React, HTML/CSS, and Typescript. Deployed by Vercel.</p>
         <a
           href="https://github.com/thomxsnguyen"
           target="_blank"
