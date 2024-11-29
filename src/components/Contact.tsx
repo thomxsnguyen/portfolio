@@ -34,14 +34,21 @@ function Contact() {
       };
 
       console.log(templateParams);
-      emailjs.send("service_id", "template_id", templateParams, "api_key").then(
-        (response: EmailJSResponseStatus) => {
-          console.log("SUCCESS!", response.status, response.text);
-        },
-        (error: Error) => {
-          console.log("FAILED...", error);
-        }
-      );
+      emailjs
+        .send(
+          "service_zz7g93p",
+          "service_zz7g93p",
+          templateParams,
+          "GccY3flZdpomCv9sG"
+        )
+        .then(
+          (response: EmailJSResponseStatus) => {
+            console.log("SUCCESS!", response.status, response.text);
+          },
+          (error: Error) => {
+            console.log("FAILED...", error);
+          }
+        );
       setName("");
       setEmail("");
       setMessage("");
