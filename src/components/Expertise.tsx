@@ -40,7 +40,7 @@ function Expertise() {
   return (
     <div className="container" id="expertise">
       <div className="skills-container">
-        <h1>Expertise</h1>
+        <h1>About Me</h1>
         <div className="skills-grid">
           <div className="skill">
             <FontAwesomeIcon icon={faHtml5} size="3x" />
