@@ -58,7 +58,7 @@ function Expertise() {
 
           <div className="skill">
             <FontAwesomeIcon icon={faDocker} size="3x" />
-            <h3>Back-end Developments</h3>
+            <h3>Back-end Development</h3>
             <p>
               Currently expanding knowledge in backend development, focusing on
               building scalable and secure systems with Flask, Python, SQL,
