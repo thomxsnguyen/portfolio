@@ -1,3 +1,5 @@
+// Contact.tsx
+
 import React, { useRef, useState } from "react";
 import "../assets/styles/Contact.scss";
 import emailjs, { EmailJSResponseStatus } from "@emailjs/browser";
@@ -15,16 +17,14 @@ function Contact() {
   const [emailError, setEmailError] = useState<boolean>(false);
   const [messageError, setMessageError] = useState<boolean>(false);
 
-  const form = useRef();
+  const form = useRef<HTMLFormElement>(null);
 
-  const sendEmail = (e: any) => {
+  const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
 
     setNameError(name === "");
     setEmailError(email === "");
     setMessageError(message === "");
-
-    /* Uncomment below if you want to enable the emailJS */
 
     if (name !== "" && email !== "" && message !== "") {
       var templateParams = {
@@ -53,62 +53,68 @@ function Contact() {
       <div className="items-container">
         <div className="contact_wrapper">
           <h1>Contact Me</h1>
-          <p>Contact me for inq</p>
+          <p>Contact me for inquiries</p>
           <Box
             ref={form}
             component="form"
             noValidate
             autoComplete="off"
             className="contact-form"
+            onSubmit={sendEmail}
           >
             <div className="form-flex">
               <TextField
                 required
-                id="outlined-required"
                 label="Your Name"
                 placeholder="What's your name?"
                 value={name}
-                onChange={(e) => {
-                  setName(e.target.value);
-                }}
+                onChange={(e) => setName(e.target.value)}
                 error={nameError}
                 helperText={nameError ? "Please enter your name" : ""}
+                InputProps={{
+                  style: {
+                    color: "#000",
+                    backgroundColor: "#fff",
+                  },
+                }}
               />
               <TextField
                 required
-                id="outlined-required"
                 label="Email / Phone"
                 placeholder="How can I reach you?"
                 value={email}
-                onChange={(e) => {
-                  setEmail(e.target.value);
-                }}
+                onChange={(e) => setEmail(e.target.value)}
                 error={emailError}
                 helperText={
                   emailError ? "Please enter your email or phone number" : ""
                 }
+                InputProps={{
+                  style: {
+                    color: "#000",
+                    backgroundColor: "#fff",
+                  },
+                }}
               />
             </div>
             <TextField
               required
-              id="outlined-multiline-static"
               label="Message"
               placeholder="Send me any inquiries or questions"
               multiline
               rows={10}
               className="body-form"
               value={message}
-              onChange={(e) => {
-                setMessage(e.target.value);
-              }}
+              onChange={(e) => setMessage(e.target.value)}
               error={messageError}
               helperText={messageError ? "Please enter the message" : ""}
+              InputProps={{
+                style: {
+                  color: "#000",
+                  backgroundColor: "#fff",
+                },
+              }}
             />
-            <Button
-              variant="contained"
-              endIcon={<SendIcon />}
-              onClick={sendEmail}
-            >
+            <Button variant="contained" endIcon={<SendIcon />} type="submit">
               Send
             </Button>
           </Box>
